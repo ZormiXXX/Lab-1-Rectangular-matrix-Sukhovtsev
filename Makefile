@@ -1,9 +1,9 @@
 CC      := gcc
 CFLAGS  := -std=c11 -Wall -Wextra -O2
-LDFLAGS :=
+LDFLAGS := -lm
 
 TARGET  := lr1
-SRCS    := main.c field_info.c matrix.c tests.c
+SRCS    := main.c ui.c algebra.c matrix.c tests.c
 OBJS    := $(SRCS:.c=.o)
 
 .PHONY: all run test clean rebuild
